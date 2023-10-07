@@ -18,6 +18,8 @@ return new class extends Migration
             $table->foreign('id_user')->references('id')->on('users');
             //เก็บรหัสนศ.
             $table->char('std_id',11)->comment('รหัสนักศึกษา');
+            $table->string('');
+
 
             $table->timestamps();
             $table->softDeletes();

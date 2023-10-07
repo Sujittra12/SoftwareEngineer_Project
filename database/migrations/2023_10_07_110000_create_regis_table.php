@@ -24,6 +24,8 @@ return new class extends Migration
             $table->foreignId('lab_id');
             $table->foreign('lab_id')->references('lab_id')->on('labs');
 
+            $table->char('section',2);
+
             $table->timestamps();
             $table->softDeletes();
         });

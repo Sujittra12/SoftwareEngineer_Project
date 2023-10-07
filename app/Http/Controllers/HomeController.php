@@ -7,17 +7,15 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function teacherHome(){
-        return view('homeForAdmin');
+        return view('teacher.homeForAdmin');
     }
     public function userHome(){
-        return view('homeForUser');
+        return view('student.homeForUser');
     }
     public function TAHome(){
-        return view('homeForTA');
+        return view('TA.homeForTA');
     }
-    public function adduser(){
-        return view('adduser');
-    }
+   
     
     
 
